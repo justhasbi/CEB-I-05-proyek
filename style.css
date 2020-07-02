@@ -19,17 +19,17 @@
     width: 80%;
     margin: 0 auto;
 }
-.title-intro {
+.container .title-intro {
     display: flex;
     align-items: center;
-    
+    padding: 20px;
 }
 .container .title-intro .title-tag {
-    font-size: 3em;
-    margin-right: 40px;
     width: 50%;
 }
-
+.container .title-intro .title-tag h1{
+    font-size: 3em;
+}
 .container .title-intro .intro {
     width: 50%;
 }
@@ -41,7 +41,9 @@
     display: flex;
     margin: 0 auto;
     position: relative;
-    min-height: 300px;
+    /* min-height: 300px; */
+    padding: 20px;
+    
 }
 .profile-person .profile-text{
     width: 60%;
@@ -50,10 +52,10 @@
 .profile-person .profile-text h2, .container .title-intro h1 {
     font-family: 'Playfair Display', serif;
 }
-.profile-person .social-right {
+.profile-person .social {
     position: absolute;
     top: 120px;
-    left: -50px;
+    left: -70px;
 }
 .profile-person .social ul {
     list-style: none;
@@ -64,26 +66,17 @@
     color: black;
     font-size: 1.7em;
 }
-.left {
-    text-align: right;
-}
 
-.profile-person .social-left {
-    position: absolute;
-    top: 120px;
-    right: -20px;
-}
 .round-image {
     min-width: 350px;
     height: 350px;
     background-color: aqua;
     border-radius: 50%;
-    margin: 30px 30px 30px 50px;
-}
-.left .round-image {
     margin: 30px;
 }
 
+
+/* image placeholder */
 .img-1 {
     background-image: url('img/img-1.jpg');
     background-position: center;
@@ -107,11 +100,53 @@
     background-position: center;
     background-size: cover;
 }
-/* image placeholder */
-
+/* Button CSS */
+.btn-more {
+    text-decoration: none;
+    color: #fff;
+    background-color: cadetblue;
+    padding: 10px;
+    display: inline-block;
+    margin: 10px 0;
+    border-radius: 5px;
+}
 
 /* BATAS MAIN CONTENT */
 
 /* CSS Footer */
 
 /* Batas Footer */
+
+
+
+/* CSS MEDIA QUERY */
+@media only screen and (max-width: 969px) {
+    .profile-person {
+        flex-wrap: wrap;
+    }
+
+    .profile-person .profile-text{ 
+        width: 100%;
+    }
+
+    .round-image {
+        margin: 30px auto 0 auto;
+    }
+}
+
+@media only screen and (max-width: 569px) {
+    .container {
+        width: 100%;
+    }
+
+    .round-image {
+        min-width: 250px;
+        height: 250px;
+        margin: 30px auto 0 auto;
+    }
+
+    .profile-person .social {
+        left: 0;
+        top: 80px;
+    }
+}
