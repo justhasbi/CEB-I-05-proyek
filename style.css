@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display');
+
 * {
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* CSS Header */
@@ -11,6 +15,100 @@
 /* Batas Jumbotron */
 
 /* CSS MAIN CONTENT */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+.title-intro {
+    display: flex;
+    align-items: center;
+    
+}
+.container .title-intro .title-tag {
+    font-size: 3em;
+    margin-right: 40px;
+    width: 50%;
+}
+
+.container .title-intro .intro {
+    width: 50%;
+}
+
+.line {
+    border-top: 3px solid #ccc;
+}
+.profile-person {
+    display: flex;
+    margin: 0 auto;
+    position: relative;
+    min-height: 300px;
+}
+.profile-person .profile-text{
+    width: 60%;
+    padding: 20px;
+}
+.profile-person .profile-text h2, .container .title-intro h1 {
+    font-family: 'Playfair Display', serif;
+}
+.profile-person .social-right {
+    position: absolute;
+    top: 120px;
+    left: -50px;
+}
+.profile-person .social ul {
+    list-style: none;
+}
+
+.profile-person .social a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.7em;
+}
+.left {
+    text-align: right;
+}
+
+.profile-person .social-left {
+    position: absolute;
+    top: 120px;
+    right: -20px;
+}
+.round-image {
+    min-width: 350px;
+    height: 350px;
+    background-color: aqua;
+    border-radius: 50%;
+    margin: 30px 30px 30px 50px;
+}
+.left .round-image {
+    margin: 30px;
+}
+
+.img-1 {
+    background-image: url('img/img-1.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.img-2 {
+    background-image: url('img/img-2.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.img-3 {
+    background-image: url('img/img-3.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.img-4 {
+    background-image: url('img/img-4.jpg');
+    background-position: center;
+    background-size: cover;
+}
+/* image placeholder */
+
 
 /* BATAS MAIN CONTENT */
 
