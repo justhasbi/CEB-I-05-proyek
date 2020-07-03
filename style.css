@@ -7,7 +7,33 @@
 /* Batas CSS Header */
 
 /* CSS Jumbotron */
-
+.Jumbotron {
+  padding: 200px 0 150px 0;
+  background-image: url(https://i.pinimg.com/originals/70/63/0d/70630da368cc7d6dd65948c902c2a9e6.jpg);
+  background-size: cover;
+  color: white;
+  text-align: center;
+  }
+  
+  .Jumbotron-Text h1{
+    font-size: 95px;
+    letter-spacing: 5px;
+    margin-bottom: 0 auto;
+  }
+  .Jumbotron-Text button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 10px 25px;
+    color: orangered;
+    background-color: #ddd;
+    cursor: pointer;
+  }
+  
+  .Jumbotron-Text button:hover {
+    background-color: #555;
+    color: white;
+  }
 /* Batas Jumbotron */
 
 /* CSS MAIN CONTENT */
