@@ -1,5 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display');
+
 * {
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body, html {
+    /* background-color: #f2f4f2; */
+    background-color: #fefcfc;
+    margin: 0;
 }
 
 /* CSS Header */
@@ -11,9 +20,242 @@
 /* Batas Jumbotron */
 
 /* CSS MAIN CONTENT */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+.container .title-intro {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.container .title-intro .title-tag h1{
+    font-size: 3em;
+    display: inline-block;
+}
+.container .title-intro .intro {
+    width: 50%;
+}
+
+.line {
+    border-top: 3px solid #ccc;
+}
+.profile-person {
+    display: flex;
+    margin: 0 auto;
+    position: relative;
+    padding: 20px;
+    
+}
+.profile-person .profile-text{
+    width: 60%;
+    padding: 20px;
+}
+.profile-person .profile-text h2, .container .title-intro h1 {
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #4f8a8b;
+}
+.profile-person .profile-text h2 {
+    font-size: 1.8em;
+}
+.profile-person .social {
+    position: absolute;
+    top: 120px;
+    left: -70px;
+    
+}
+.profile-person .social ul {
+    list-style: none;
+    
+}
+
+.profile-person .social li {
+    margin: 5px 0;
+}
+
+.profile-person .social a {
+    text-decoration: none;
+    color: #4f8a8b;
+    font-size: 1.7em;
+}
+
+.round-image {
+    min-width: 350px;
+    height: 350px;
+    background-color: aqua;
+    border-radius: 50%;
+    margin: 30px;
+}
+
+
+/* image placeholder */
+.img-1 {
+    background-image: url('img/img-1.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.img-2 {
+    background-image: url('img/img-2.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.img-3 {
+    background-image: url('img/img-3.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.img-4 {
+    background-image: url('img/img-4.jpg');
+    background-position: center;
+    background-size: cover;
+}
+/* Button CSS */
+.btn-more {
+    text-decoration: none;
+    color: #fff;
+    background-color: #00796B;
+    padding: 10px;
+    display: inline-block;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.4);
+}
 
 /* BATAS MAIN CONTENT */
 
-/* CSS Footer */
+/* Newsletter */
+.wrapper-newsletter {
+	overflow: hidden;
+	padding: 5em 0em;
+	background: #f1f1f1;
+}
+.wrapper-newsletter .newsletter {
+	text-align: center;
+}
+.newsletter .tittle {
+    width: 80%;
+    margin: 0 auto 70px auto;
+}
+.newsletter input, .newsletter textarea {
+	margin-bottom: 16px;
+	position: relative;
+	border-radius: 0.5em;
+    border: 0;
+	width: 40%;
+	padding: 24px ;
+	font-size: 1em;
+	outline: none;
+	overflow: hidden;
+}
 
+.newsletter .button {
+    
+	display: inline-block;
+	margin-top: 2em;
+	padding: 10px 15px;
+	background-color: #00796B;
+	border-radius: 0.5em;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #fff;
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.4);
+}
+/* Batas Newsletter */
+
+
+/* CSS Footer */
+footer {
+    background-color:#212F3C;
+    width: 100%;
+    height: auto;
+}
+
+.footer-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer p {
+    font-size: smaller;
+}
+
+.footer-link {
+    width: 30%;
+    color:white;
+    padding:0 20px;
+    margin: 10px 10px 0 10px;
+}
+
+
+.footer-link h3 {
+    padding-bottom: 5px;
+    border-bottom: 5px solid #F39C12;
+}
+
+.footer-bottom {
+    margin-top: 50px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    border-top: thin solid white;   
+}
 /* Batas Footer */
+
+/* CSS MEDIA QUERY */
+@media only screen and (max-width: 969px) {
+    .profile-person {
+        flex-wrap: wrap;
+    }
+
+    .profile-person .profile-text{ 
+        width: 100%;
+    }
+    .round-image {
+        margin: 30px auto 0 auto;
+    }
+
+    .newsletter input, .newsletter textarea {
+        width: 70%;
+    }
+
+    .container .title-intro .intro { 
+        width: 100%;
+    }
+
+    .footer-link { 
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 569px) {
+    .container {
+        width: 100%;
+    }
+
+    .round-image {
+        min-width: 250px;
+        height: 250px;
+        margin: 30px auto 0 auto;
+    }
+
+    .profile-person .social {
+        left: 0;
+        top: 80px;
+    }
+
+    .newsletter input, .newsletter textarea {
+        width: 80%;
+    }
+
+    .container .title-intro .intro { 
+        width: 100%;
+    }
+}
+
