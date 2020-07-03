@@ -5,6 +5,10 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
+body {
+    /* background-color: #f2f4f2; */
+    background-color: #fefcfc;
+}
 
 /* CSS Header */
 
@@ -51,19 +55,31 @@
 }
 .profile-person .profile-text h2, .container .title-intro h1 {
     font-family: 'Playfair Display', serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #4f8a8b;
+}
+.profile-person .profile-text h2 {
+    font-size: 1.8em;
 }
 .profile-person .social {
     position: absolute;
     top: 120px;
     left: -70px;
+    
 }
 .profile-person .social ul {
     list-style: none;
+    
+}
+
+.profile-person .social li {
+    margin: 5px 0;
 }
 
 .profile-person .social a {
     text-decoration: none;
-    color: black;
+    color: #4f8a8b;
     font-size: 1.7em;
 }
 
@@ -104,11 +120,12 @@
 .btn-more {
     text-decoration: none;
     color: #fff;
-    background-color: cadetblue;
+    background-color: #00796B;
     padding: 10px;
     display: inline-block;
     margin: 10px 0;
     border-radius: 5px;
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.4);
 }
 
 /* BATAS MAIN CONTENT */
