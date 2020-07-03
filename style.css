@@ -5,9 +5,10 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
-body {
+body, html {
     /* background-color: #f2f4f2; */
     background-color: #fefcfc;
+    margin: 0;
 }
 
 /* CSS Header */
@@ -27,12 +28,12 @@ body {
     display: flex;
     align-items: center;
     padding: 20px;
-}
-.container .title-intro .title-tag {
-    width: 50%;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 .container .title-intro .title-tag h1{
     font-size: 3em;
+    display: inline-block;
 }
 .container .title-intro .intro {
     width: 50%;
@@ -45,7 +46,6 @@ body {
     display: flex;
     margin: 0 auto;
     position: relative;
-    /* min-height: 300px; */
     padding: 20px;
     
 }
@@ -130,19 +130,63 @@ body {
 
 /* BATAS MAIN CONTENT */
 
+/* Newsletter */
+.wrapper-newsletter {
+	overflow: hidden;
+	padding: 5em 0em;
+	background: #f1f1f1;
+}
+.wrapper-newsletter .newsletter {
+	text-align: center;
+}
+.newsletter .tittle {
+    width: 80%;
+    margin: 0 auto 70px auto;
+}
+.newsletter input, .newsletter textarea {
+	margin-bottom: 16px;
+	position: relative;
+	border-radius: 0.5em;
+    border: 0;
+	width: 40%;
+	padding: 24px ;
+	font-size: 1em;
+	outline: none;
+	overflow: hidden;
+}
+
+.newsletter .button {
+    
+	display: inline-block;
+	margin-top: 2em;
+	padding: 10px 15px;
+	background-color: #00796B;
+	border-radius: 0.5em;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #fff;
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.4);
+}
+/* Batas Newsletter */
+
+
 /* CSS Footer */
 footer {
     background-color:#212F3C;
     width: 100%;
-    height: 500px;
+    height: auto;
+}
+
+.footer-wrapper {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 footer p {
     font-size: smaller;
 }
 
-.footer-left {
-    float: left;
+.footer-link {
     width: 30%;
     color:white;
     padding:0 20px;
@@ -150,43 +194,15 @@ footer p {
 }
 
 
-.footer-left h3 {
-    padding-bottom: 5px;
-    border-bottom: 5px solid #F39C12;
-}
-
-.footer-center {
-    float: left;
-    margin: 0 auto;
-    width: 30%;
-    color:white;
-    padding: 0 20px;
-    margin: 10px 10px 0 10px;
-}
-
-.footer-center h3 {
-    padding-bottom: 5px;
-    border-bottom: 5px solid #F39C12;
-}
-
-.footer-right {
-    float: left;
-    width: 30%;
-    color:white;
-    padding: 0 20px;
-    margin: 10px 10px 0 10px;
-}
-
-.footer-right h3 {
+.footer-link h3 {
     padding-bottom: 5px;
     border-bottom: 5px solid #F39C12;
 }
 
 .footer-bottom {
-    float:left;
-    text-align: center;
-    margin-top: 120px;
+    margin-top: 50px;
     width: 100%;
+    text-align: center;
     color: white;
     border-top: thin solid white;   
 }
@@ -201,9 +217,20 @@ footer p {
     .profile-person .profile-text{ 
         width: 100%;
     }
-
     .round-image {
         margin: 30px auto 0 auto;
+    }
+
+    .newsletter input, .newsletter textarea {
+        width: 70%;
+    }
+
+    .container .title-intro .intro { 
+        width: 100%;
+    }
+
+    .footer-link { 
+        width: 100%;
     }
 }
 
@@ -221,6 +248,14 @@ footer p {
     .profile-person .social {
         left: 0;
         top: 80px;
+    }
+
+    .newsletter input, .newsletter textarea {
+        width: 80%;
+    }
+
+    .container .title-intro .intro { 
+        width: 100%;
     }
 }
 
